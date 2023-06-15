@@ -16,6 +16,7 @@ public class BloonScript : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().sprite = bloonObject.sprite;
         GetComponent<BoxCollider2D>().size = bloonObject.size;
+        transform.position = path[pathIndex].EvaluatePosition(0);
     }
 
     // Update is called once per frame
