@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &52739879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,13 +1110,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52739875}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1780474387}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &52739881
 MonoBehaviour:
@@ -1130,6 +1130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea825267ffa30c418facb864719b71b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloonBase: {fileID: 0}
+  nextWave: []
+  delays: []
+  tracks: []
 --- !u!1 &53367747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldPosition: {x: 0, y: 0, z: 0}
+  monkey: {fileID: 6355875770980320126, guid: 426df54f44a00dc4d83a327ebe7daf5f, type: 3}
+  blockedArea:
+    serializedVersion: 2
+    m_Bits: 16
 --- !u!212 &53367749
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1225,10 +1233,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.58622074, y: 0.598469, z: -3.8125012}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &53367751
 MonoBehaviour:
@@ -1261,7 +1269,7 @@ MonoBehaviour:
       - m_Target: {fileID: 53367748}
         m_TargetAssemblyTypeName: PlaceTowers, Assembly-CSharp
         m_MethodName: PlaceTurret
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1613,7 +1621,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 52739880}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

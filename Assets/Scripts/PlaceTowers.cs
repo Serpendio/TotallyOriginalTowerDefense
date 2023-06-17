@@ -15,14 +15,12 @@ public class PlaceTowers : MonoBehaviour
     {
         
     }
-
+    
     private void MouseToWorldPos()
     {
         gameObject.transform.position = worldPosition;
         mousePos = Input.mousePosition;
         mousePos.z += 10f;
-
-
         worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
     }
     void Update()
