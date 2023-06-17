@@ -1130,25 +1130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea825267ffa30c418facb864719b71b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloonBase: {fileID: 2772086790721954721, guid: 5f50d4dfc38415a4a8ee64f8322c2b9d,
-    type: 3}
-  nextWave:
-  - {fileID: 11400000, guid: c028a3df3e5db30489442053eafd7deb, type: 2}
-  - {fileID: 11400000, guid: 94ed5a3ed8bada547a7edae75f586c31, type: 2}
-  - {fileID: 11400000, guid: c028a3df3e5db30489442053eafd7deb, type: 2}
-  - {fileID: 11400000, guid: c028a3df3e5db30489442053eafd7deb, type: 2}
-  - {fileID: 11400000, guid: 94ed5a3ed8bada547a7edae75f586c31, type: 2}
-  - {fileID: 11400000, guid: 94ed5a3ed8bada547a7edae75f586c31, type: 2}
-  delays:
-  - 0.1
-  - 0.5
-  - 1
-  - 2
-  - 2
-  - 2
-  tracks:
-  - {fileID: 52739879}
-  spawnIndex: 0
 --- !u!1 &53367747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,6 +1141,7 @@ GameObject:
   - component: {fileID: 53367750}
   - component: {fileID: 53367749}
   - component: {fileID: 53367748}
+  - component: {fileID: 53367751}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -1179,7 +1161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8282b58629d0ddf4baa9ff3fcb63dcb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mousePos: {x: 0, y: 0, z: 0}
   worldPosition: {x: 0, y: 0, z: 0}
 --- !u!212 &53367749
 SpriteRenderer:
@@ -1249,6 +1230,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &53367751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53367747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: cad6ae10e8e46c149b5417c5cdc082f1,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 53367748}
+        m_TargetAssemblyTypeName: PlaceTowers, Assembly-CSharp
+        m_MethodName: PlaceTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f10cceb7-6f96-40f1-950a-0ccb848c8ba6
+    m_ActionName: place/click
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: place
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &318795531
 GameObject:
   m_ObjectHideFlags: 0
