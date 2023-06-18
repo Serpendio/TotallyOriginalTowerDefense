@@ -1,0 +1,34 @@
+{
+    "name": "playerMonkeys",
+    "maps": [
+        {
+            "name": "place",
+            "id": "e07ab4d5-3254-4548-943b-fbe54527ae8e",
+            "actions": [
+                {
+                    "name": "click",
+                    "type": "Button",
+                    "id": "f10cceb7-6f96-40f1-950a-0ccb848c8ba6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "28558239-99d8-4ee5-9fcf-c50a91edfb0b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
