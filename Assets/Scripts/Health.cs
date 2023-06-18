@@ -26,6 +26,10 @@ public class Health : MonoBehaviour, IDamageable
     {
         CurrentHealth = maxHealth;
     }
+    private void OnValidate()
+    {
+        CurrentHealth = maxHealth;
+    }
     public void Damage(int damage)
     {
         CurrentHealth -= damage;
