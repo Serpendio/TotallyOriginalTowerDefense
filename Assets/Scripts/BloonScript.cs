@@ -13,7 +13,11 @@ public class BloonScript : MonoBehaviour
     void Start()
     {
         MapSO();
-        transform.position = path[pathIndex].EvaluatePosition(0);
+
+        if (path != null)
+        {
+            transform.position = path[pathIndex].EvaluatePosition(0);
+        }
     }
     private void OnValidate()
     {
@@ -41,6 +45,10 @@ public class BloonScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (path == null)
+        {
+            return;
+        }
         var tempPos = path[pathIndex].GetPointAtLinearDistance(percentAlongPath, bloonObject.speed * Time.deltaTime, out percentAlongPath);
 
         if (percentAlongPath >= 1)
