@@ -6,7 +6,7 @@ using UnityEngine.Splines;
 
 public class BloonSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject bloonBase;
+    [SerializeField] BloonScript bloonBase;
 
     public List<BloonSO> nextWave = new();
     public List<float> delays = new();
@@ -48,8 +48,8 @@ public class BloonSpawner : MonoBehaviour
     private IEnumerator SpawnBloon(float spawnDelay)
     {
         yield return new WaitForSeconds(spawnDelay);
-        Instantiate(bloonBase);
-        var script = bloonBase.GetComponent<BloonScript>();
+
+        var script = Instantiate(bloonBase);
         script.spawnIndex = spawnIndex;
         script.bloonObject = nextWave[spawnIndex];
         script.path = tracks[0];
