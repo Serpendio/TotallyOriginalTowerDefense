@@ -32,6 +32,10 @@ public class BloonScript : MonoBehaviour
         {
             collider.size = bloonObject.size;
         }
+        if (TryGetComponent(out Health health))
+        {
+            health.MaxHealth = bloonObject.maxHealth;
+        }
     }
 
     // Update is called once per frame
