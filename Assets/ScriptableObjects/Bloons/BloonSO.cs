@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "bloon", menuName = "ScriptableObjects/Bloon")]
+[CreateAssetMenu(menuName = AssetMenuConst.ScriptableObject + nameof(BloonSO))]
 public class BloonSO : ScriptableObject
 {
     [System.Serializable]
