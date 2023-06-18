@@ -15,7 +15,10 @@ public class BloonScript : MonoBehaviour
         MapSO();
         transform.position = path[pathIndex].EvaluatePosition(0);
     }
-
+    private void OnValidate()
+    {
+        MapSO();
+    }
     private void MapSO()
     {
         if (bloonObject == null)
@@ -44,9 +47,5 @@ public class BloonScript : MonoBehaviour
         }
 
         transform.position = tempPos;
-    }
-    private void OnValidate()
-    {
-        MapSO();
     }
 }
