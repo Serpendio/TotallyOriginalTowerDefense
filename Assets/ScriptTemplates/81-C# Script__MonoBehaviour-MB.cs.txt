@@ -1,13 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
     #ROOTNAMESPACEBEGIN#
 public class #SCRIPTNAME# : MonoBehaviour
 {
-    void Awake()
-    {
-        #NOTRIM#
-    }
+    #NOTRIM#
 }
 #ROOTNAMESPACEEND#
