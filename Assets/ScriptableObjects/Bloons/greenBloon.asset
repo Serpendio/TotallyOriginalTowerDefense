@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d35bca634651d840acdb894e03581b9, type: 3}
-  m_Name: redBloon
+  m_Name: greenBloon
   m_EditorClassIdentifier: 
-  children: []
-  parentBloon: {fileID: 11400000, guid: 94ed5a3ed8bada547a7edae75f586c31, type: 2}
+  children:
+  - childBloon: {fileID: 11400000, guid: 94ed5a3ed8bada547a7edae75f586c31, type: 2}
+    numChildren: 1
   maxHealth: 1
-  speed: 1
+  speed: 1.8
   size: {x: 1, y: 1}
-  sprite: {fileID: 21300000, guid: f6ff2ebe75c0dca4e8d08e40da6fc04e, type: 3}
-  isFortified: 0
-  isRegrow: 0
-  isCamo: 0
-  roundIndex: 0
+  sprite: {fileID: 21300000, guid: ed9b50f5f06d2014e8245141ce3ca294, type: 3}
+  isMoab: 0
