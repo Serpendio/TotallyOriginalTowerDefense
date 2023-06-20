@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d35bca634651d840acdb894e03581b9, type: 3}
   m_Name: blueBloon
   m_EditorClassIdentifier: 
-  children: []
-  parentBloon: {fileID: 0}
+  children:
+  - childBloon: {fileID: 11400000, guid: c028a3df3e5db30489442053eafd7deb, type: 2}
+    numChildren: 1
   maxHealth: 1
   speed: 1.4
   size: {x: 1, y: 1}
   sprite: {fileID: 21300000, guid: 9d1d3ca925d01b441900c6c2ce310fd8, type: 3}
-  isFortified: 0
-  isRegrow: 0
-  isCamo: 0
-  roundIndex: 0
+  isMoab: 0
