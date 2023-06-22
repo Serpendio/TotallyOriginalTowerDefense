@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e3265ab4bf004d28a9537516768c1c75
+guid: e1da3ba2aca0afa4c9527a78d0e492ac
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Liberation Sans
+  - Segoe UI Symbol
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
