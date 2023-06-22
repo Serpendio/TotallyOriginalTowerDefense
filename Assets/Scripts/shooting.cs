@@ -34,7 +34,7 @@ public class shooting : MonoBehaviour
         if (currentTime >= shootDelay)
         {
             GameObject dart = Instantiate(dartPrefab, firePoint.position, firePoint.rotation);
-            dart.GetComponent<Rigidbody2D>().AddForce(firePoint.up * dartSpeed, ForceMode2D.Impulse);
+            dart.GetComponent<Rigidbody2D>().AddForce(firePoint.right * dartSpeed, ForceMode2D.Impulse);
             currentTime= 0;
         }
     }
