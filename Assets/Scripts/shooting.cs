@@ -1,8 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 public class shooting : MonoBehaviour
 {
     //needed
@@ -11,8 +8,8 @@ public class shooting : MonoBehaviour
 
     //temp
     Vector3 mousePos;
-    public Vector3 Temp;
-
+    public Vector3 mousePosWorld;
+    
     //changeables
     public float dartSpeed;
     public float shootDelay;
@@ -44,11 +41,11 @@ public class shooting : MonoBehaviour
         
         mousePos = Input.mousePosition;
         mousePos.z += 10f;
-        Temp = Camera.main.ScreenToWorldPoint(mousePos);
+        mousePosWorld = Camera.main.ScreenToWorldPoint(mousePos);
     }
     void lockOn()
-    {
-        Vector3 distanceVector = Temp - firePoint.position;
+    {                           
+        Vector3 distanceVector = mousePosWorld/*<-- this is the target the the towers focus on*/ - firePoint.position;
         float angle = MathF.Atan2(distanceVector.y, distanceVector.x) * Mathf.Rad2Deg;
         firePoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }

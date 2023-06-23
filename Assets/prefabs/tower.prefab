@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4976619019233222444}
   - component: {fileID: -3603236456361554921}
   m_Layer: 8
-  m_Name: Circle (2)
+  m_Name: tower
   m_TagString: monkey
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
