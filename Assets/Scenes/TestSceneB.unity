@@ -1169,7 +1169,7 @@ MonoBehaviour:
   monkey: {fileID: 6355875770980320126, guid: 426df54f44a00dc4d83a327ebe7daf5f, type: 3}
   blockedArea:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 256
 --- !u!212 &53367749
 SpriteRenderer:
   m_ObjectHideFlags: 0
